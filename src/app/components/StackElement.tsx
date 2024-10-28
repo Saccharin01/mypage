@@ -7,7 +7,7 @@ export default function StackElement() {
         <h2 className="text-2xl font-bold mb-6">What I Used</h2>
       </div>
 
-      <div className="space-y-4 py-6 w-full">
+      <div className="space-y-4 py-6 w-3/4">
         {StackUsage.map((category, index) => (
           <div key={index}>
             <h3 className="text-lg font-semibold">{category.title}</h3>
