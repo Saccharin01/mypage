@@ -27,16 +27,15 @@ export default function ProjectElement() {
               onClick={() => handleSelectData(element)}
             >
               {/* 외부 div로 감싸서 구조 변경 */}
-              <div className="h-1/2 flex justify-center items-center overflow-hidden rounded-t-lg">
-                {/* 이미지 */}
-                <Image
-                  src={element.img}
-                  alt="이미지입니다!"
-                  width={300}
-                  height={200} // 고정 높이 설정
-                  className="object-cover w-full h-full"
-                  priority
-                />
+              <div className="h-1/2 w-full relative flex justify-center items-center overflow-hidden rounded-t-lg">
+                  <Image
+                    src={element.img}
+                    alt="이미지입니다!"
+                    layout="fill" // fill 레이아웃 적용
+                    objectFit="cover" // objectFit을 cover로 설정
+                    className="rounded-t-lg" // 이미지에 맞춰 둥근 모서리 적용
+                    priority
+                  />
               </div>
 
               {/* params */}
