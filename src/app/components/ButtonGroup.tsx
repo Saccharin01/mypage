@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { IstaticData } from "@/shared/interface/static.interface";
+import { ILinkbuttons } from "@/shared/interface/static.interface"
 
-export default function ButtonGroup({ aboutProps }: { aboutProps: IstaticData['details']['about'] }) {
+export default function ButtonGroup({ aboutProps }: { aboutProps: ILinkbuttons[] }) {
   return (
     <div className="flex flex-wrap gap-4 my-6">
       {aboutProps.map((button, index) => (
