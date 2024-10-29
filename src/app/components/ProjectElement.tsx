@@ -1,4 +1,4 @@
-import { useLiteral } from "./context/useLiteral";
+import { useLiteral } from "./hooks/context/useLiteral";
 import { IstaticData } from "@/shared/interface/static.interface";
 import { staticData } from "@/shared/static.data";
 import Image from "next/image";
@@ -28,14 +28,14 @@ export default function ProjectElement() {
             >
               {/* 외부 div로 감싸서 구조 변경 */}
               <div className="h-1/2 w-full relative flex justify-center items-center overflow-hidden rounded-t-lg">
-                  <Image
-                    src={element.img}
-                    alt="이미지입니다!"
-                    layout="fill" // fill 레이아웃 적용
-                    objectFit="cover" // objectFit을 cover로 설정
-                    className="rounded-t-lg" // 이미지에 맞춰 둥근 모서리 적용
-                    priority
-                  />
+                <Image
+                  src={element.img}
+                  alt="이미지입니다!"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  className="object-cover rounded-t-lg" // objectFit을 Tailwind 클래스로 대체
+                  priority
+                />
               </div>
 
               {/* params */}

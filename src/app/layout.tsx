@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { StaticProvider } from "./components/context/useLiteral";
+import { StaticProvider } from "./components/hooks/context/useLiteral";
 
 export const metadata: Metadata = {
   title: "Saccharin01's portfolio",

@@ -1,10 +1,11 @@
 "use client";
 
-import { useLiteral } from "../components/context/useLiteral";
+import { useLiteral } from "../components/hooks/context/useLiteral";
 import ErrorPage from "../components/ErrorPage";
 import ButtonGroup from "../components/ButtonGroup";
 import StackTags from "../components/StackTags";
 import SampleImage from "../components/SampleImage";
+import DetailImage from "../components/DetailImage";
 
 export default function DetailsPage() {
   const { literal } = useLiteral();
@@ -30,7 +31,8 @@ export default function DetailsPage() {
         <StackTags stackList={selectedProject.stack} />
         <ButtonGroup aboutProps={innerObj.about} />
 
-        <SampleImage sampleImages={innerObj.sampleImg} />
+        {/* <SampleImage sampleImages={innerObj.sampleImg} /> */}
+        <DetailImage sampleImages={innerObj.sampleImg}/>
       </div>
     </div>
   );
