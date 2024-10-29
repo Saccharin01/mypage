@@ -5,7 +5,6 @@ import { ISampleImage } from "@/shared/interface/static.interface";
 import { useModal } from "./hooks/useModal";
 
 export default function DetailImage({ sampleImages }: { sampleImages: ISampleImage[] }) {
-  
   const { isModalOpen, selectedImage, openModal, closeModal, handleBackgroundClick } = useModal();
 
   return (
