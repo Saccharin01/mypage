@@ -1,9 +1,24 @@
-interface about {
+export interface ILinkbuttons {
   placeholder : string,
   link : string 
 }
 
-export interface Usage {
+export interface ISampleImage {
+  title : string;
+  params : string;
+  img : string;
+}
+
+export interface IDetails {
+  introduce: string;
+  params: string;
+  about: ILinkbuttons[]
+  sampleImg : ISampleImage[]
+}
+
+
+
+export interface IStackList {
   title : string;
   params : string[]
 }
@@ -13,10 +28,5 @@ export interface IstaticData {
   description: string;
   stack: string[];
   img : string
-  details: {
-    introduce: string;
-    params: string;
-    about: about[]
-    sampleImg : string[]
-  };
+  details: IDetails
 }
