@@ -28,19 +28,24 @@ export const staticData: IstaticData[] = [
       ],
       sampleImg: [
         {
-          title: "구동 예시",
-          params: "샘플이에유!",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_1.webp",
+          title: "성능 고려",
+          params: "현 상황에서는 데이터의 크기가 작아 문제가 없지만, 데이터가 커지는 상황을 고려해 useMemo 훅을 이용해 \n불필요한 리랜더링 비용을 감소합니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_useMemo.webp",
         },
         {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_2.webp",
+          title: "LRU 캐싱 인스턴스",
+          params: "AWS Amplify 배포 환경은 람다 기반의 서비스이기 때문에 서버 생태가 초기화 되는 문제를 해결하고자 전역으로 LRU 인스턴스를 생성해 선언했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_LRU_globals.webp",
         },
         {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_3.webp",
+          title: "메일 전송",
+          params: "요청사항이 n개 이상 제출되었을 경우, 개발자의 gmail 계정에 메일이 전송될 수 있도록 내부 로직을 구성했습니다. 여기에 결과값 사진도 들어가야 함!!!!",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_SMTP.webp",
+        },
+        {
+          title: "중복 메일 방지",
+          params: "n개 이상 이라는 로직을 적용했기 때문에, 중복으로 메일이 전송 될 수 있습니다. 해서, 데이터베이스에 메일 전송 일시를 기록하고 \n메일 전송 이벤트가 트리거 되면 LRU 인스턴스에 저장된 일자와 비교해서 동일한 날짜라면 전송하지 않습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_SMTP_log.webp",
         },
       ],
     },
