@@ -27,9 +27,21 @@ export const staticData: IstaticData[] = [
         },
       ],
       sampleImg: [
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_1.webp",
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_2.webp",
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_3.webp",
+        {
+          title: "구동 예시",
+          params: "샘플이에유!",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_1.webp",
+        },
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_2.webp",
+        },
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_sample_3.webp",
+        },
       ],
     },
   },
@@ -59,8 +71,16 @@ export const staticData: IstaticData[] = [
         },
       ],
       sampleImg: [
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
+        },
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
+        },
       ],
     },
   },
@@ -83,8 +103,16 @@ export const staticData: IstaticData[] = [
         },
       ],
       sampleImg: [
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
+        },
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        },
       ],
     },
   },
@@ -108,8 +136,16 @@ export const staticData: IstaticData[] = [
         },
       ],
       sampleImg: [
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        },
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        },
       ],
     },
   },
@@ -134,8 +170,15 @@ export const staticData: IstaticData[] = [
         },
       ],
       sampleImg: [
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
-        "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        },        {
+          title: "",
+          params: "",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        },
       ],
     },
   },
