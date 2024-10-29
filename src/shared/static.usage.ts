@@ -1,6 +1,6 @@
-import { Usage } from "./interface/static.interface"
+import { IStackList } from "./interface/static.interface"
 
-export const StackUsage : Usage[] = [
+export const StackUsage : IStackList[] = [
   {
     title : "Language",
     params : ["JavaScript", "Python"]
