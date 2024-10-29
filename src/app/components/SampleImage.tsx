@@ -42,10 +42,10 @@ export default function SampleImage({ sampleImages }: SampleImageProps) {
             <Image
               src={element}
               alt="이미지입니다!"
-              layout="fill" // 부모 요소를 가득 채우도록 설정
-              objectFit="cover" // 크기에 맞춰 이미지를 자름
+              fill // 부모 요소를 가득 채우도록 설정
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+              className="object-cover rounded-lg"
               priority
-              className="rounded-lg"
             />
           </div>
         ))}
@@ -68,14 +68,14 @@ export default function SampleImage({ sampleImages }: SampleImageProps) {
             {/* 원본 이미지 */}
             {selectedImage && (
               <Image
-                src={selectedImage}
-                alt="원본 이미지입니다!"
-                layout="responsive"
-                objectFit="contain" // 원본 비율 유지
-                width={800} // 최대 너비, 고정값 아님
-                height={1000} // 최대 높이, 고정값 아님
-                className="max-w-full max-h-[90vh]" // 화면의 최대 크기 제어
-              />
+              src={selectedImage}
+              alt="원본 이미지입니다!"
+              sizes="100vw" // 전체 너비로 설정
+              width={800} // 원본 비율 유지
+              height={1000}
+              style={{ width: "auto", height: "auto" }} // 비율 유지를 위해 CSS 속성 설정
+              className="object-contain max-w-full max-h-[90vh]"
+            />
             )}
           </div>
         </div>
