@@ -9,7 +9,7 @@ export default function DetailImage({ sampleImages }: { sampleImages: ISampleIma
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-4">Project Sample Images</h1>
+      <h1 className="text-3xl font-bold mb-4">About Project Images</h1>
       <div className="grid grid-cols-1 gap-4 pb-10">
         {sampleImages.map((element, index) => (
           <div key={index} className="flex">
