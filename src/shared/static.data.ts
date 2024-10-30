@@ -15,7 +15,7 @@ export const staticData: IstaticData[] = [
       about: [
         {
           placeholder: "notion",
-          link: "https://delicious-corn-899.notion.site/LoA-Music-123b1f89bb83810f9d9fd6506551536a",
+          link: "https://delicious-corn-899.notion.site/LoA-Music-12db1f89bb838031905cd85b94e3d0d2",
         },
         {
           placeholder: "GitHub",
@@ -64,7 +64,7 @@ export const staticData: IstaticData[] = [
       about: [
         {
           placeholder: "notion",
-          link: "https://delicious-corn-899.notion.site/129b1f89bb83816db18ee2a766eac8ce",
+          link: "https://delicious-corn-899.notion.site/12db1f89bb83805c8895d0ce4652be7a",
         },
         {
           placeholder: "Github",
