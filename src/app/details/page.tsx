@@ -4,7 +4,6 @@ import { useLiteral } from "../components/hooks/context/useLiteral";
 import ErrorPage from "../components/ErrorPage";
 import ButtonGroup from "../components/ButtonGroup";
 import StackTags from "../components/StackTags";
-import SampleImage from "../components/SampleImage";
 import DetailImage from "../components/DetailImage";
 
 export default function DetailsPage() {
