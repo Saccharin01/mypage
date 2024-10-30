@@ -152,7 +152,7 @@ export const staticData: IstaticData[] = [
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/CyberFunc/cyberfunc_sample2.webp",
         },
         {
-          title: "노션 페이지로 연결",
+          title: "팀 노션 페이지에 기록",
           params: "학습 결과를 팀 노션 페이지에 공유해서 서로의 학습 및 작업 공백에 누락이 없도록 노력했습니다.",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/CyberFunc/cyberfunc_notion.jpg",
         },
