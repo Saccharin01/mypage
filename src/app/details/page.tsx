@@ -24,7 +24,7 @@ export default function DetailsPage() {
         <div className="mb-4">
          <h1 className="text-2xl font-bold mb-4">상세 개요</h1>
           <p className="whitespace-pre-line">{innerObj.introduce}</p>
-          <p className="whitespace-pre-line">{innerObj.params}</p>
+          <p className="whitespace-pre-line text-lg">{innerObj.params}</p>
         </div>
 
         <StackTags stackList={selectedProject.stack} />
