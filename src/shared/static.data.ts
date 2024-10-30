@@ -23,7 +23,7 @@ export const staticData: IstaticData[] = [
         },
         {
           placeholder: "Deploy Link",
-          link: "https://www.saccharin01.com/music",
+          link: "https://www.saccharin01.com/",
         },
       ],
       sampleImg: [
@@ -77,14 +77,14 @@ export const staticData: IstaticData[] = [
       ],
       sampleImg: [
         {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
+          title: "최초 시작",
+          params: "바닐라 자바스크립트, HTML, CSS를 사용해서 제작한 첫 사이드 프로젝트.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
         },
         {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
+          title: "조건 변수 사용",
+          params: "조건문을 구성하는 과정에서 조건 변수를 사용해 이벤트를 처리합니다. 이벤트 대상이 아닌 요소를 클릭하면 조건 변수를 초기화 해서 모든 이벤트를 초기화합니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
         },
       ],
     },
@@ -109,12 +109,12 @@ export const staticData: IstaticData[] = [
       ],
       sampleImg: [
         {
-          title: "",
-          params: "",
+          title: "기획서 작성",
+          params: "팀원들과 회의하고, 기초 자료를 수집해 참가를 위한 기획서를 작성 했었습니다. ",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
         },
         {
-          title: "",
+          title: "기획서 작성 2",
           params: "",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
         },
@@ -142,14 +142,19 @@ export const staticData: IstaticData[] = [
       ],
       sampleImg: [
         {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+          title: "메인 페이지",
+          params: "ERP프로젝트의 메인 페이지입니다. 각 태그를 클릭 할 때 쿼리가 빌드되어 백엔드 서버로 전송됩니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/CyberFunc/cyberfunc_index.webp",
         },
         {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+          title: "검색 페이지",
+          params: "검색 결과를 나타내는 페이지 입니다. 이 페이지에서는 배열로 전송되는 데이터의 길이값을 제한하여 \n 무한 스크롤 이벤트를 구현해 서버의 부담을 줄이고자 노력했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/CyberFunc/cyberfunc_sample2.webp",
+        },
+        {
+          title: "노션 페이지로 연결",
+          params: "학습 결과를 팀 노션 페이지에 공유해서 서로의 학습 및 작업 공백에 누락이 없도록 노력했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/CyberFunc/cyberfunc_notion.jpg",
         },
       ],
     },
@@ -176,13 +181,19 @@ export const staticData: IstaticData[] = [
       ],
       sampleImg: [
         {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
-        },        {
-          title: "",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+          title: "웹 페이지",
+          params: "사용자의 사진과 닉네임을 전달받는 웹 페이지입니다. 이 페이지에는 META사에서 출시한 SAM(Segment Anything) 을 도입해서 이미지를 잘라낼 계획입니다",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_web_page.webp",
+        },
+        {
+          title: "모델 학습치 점검",
+          params: "이미지 인식 모델을 학습시키는 과정에서 해당 모델의 학습이 재대로 이뤄젔는지 관측하고 더 나은 정확도를 이끌어 낼 수 있도록 그래프를 보며 수정 보완 작업을 진행했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_serkleran.webp",
+        },
+        {
+          title: "모델 산출치 JSON화",
+          params: "현 프로젝트에서는 이미지 인식 모델에서 나온 객체값을 이용해 강화 학습의 에이전트로 활용하고 있습니다.\n 강화 학습 모델에서는 학습된 가중치를 이용해서 환경 정의에서 최적의 결과를 산출하기 위해 액션을 취하는데 그 결과의 일부 스크린 샷 입니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_request_log1.webp",
         },
       ],
     },
