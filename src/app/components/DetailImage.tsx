@@ -9,7 +9,7 @@ export default function DetailImage({ sampleImages }: { sampleImages: ISampleIma
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-4">Sample Image</h1>
+      <h1 className="text-3xl font-bold mb-4">Project Sample Images</h1>
       <div className="grid grid-cols-1 gap-4 pb-10">
         {sampleImages.map((element, index) => (
           <div key={index} className="flex">
@@ -37,7 +37,6 @@ export default function DetailImage({ sampleImages }: { sampleImages: ISampleIma
             className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
             onClick={handleBackgroundClick}
           >
-            <div className="relative max-w-full max-h-full p-4">
               <button
                 className="absolute top-2 right-2 text-white text-2xl font-bold"
                 onClick={closeModal}
@@ -51,12 +50,10 @@ export default function DetailImage({ sampleImages }: { sampleImages: ISampleIma
                   sizes="100vw"
                   width={800}
                   height={1000}
-                  style={{ width: "auto", height: "auto" }}
                   className="object-contain max-w-full max-h-[90vh]"
                 />
               )}
             </div>
-          </div>
         )}
       </div>
     </div>
