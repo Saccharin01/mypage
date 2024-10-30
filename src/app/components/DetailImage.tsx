@@ -14,7 +14,7 @@ export default function DetailImage({ sampleImages }: { sampleImages: ISampleIma
         {sampleImages.map((element, index) => (
           <div key={index} className="flex">
             <div
-              className="relative cursor-pointer w-1/3 h-40 overflow-hidden rounded-lg"
+              className="relative cursor-pointer w-1/3 h-40 min-w-[200px] min-h-[150px] overflow-hidden rounded-lg"
               onClick={() => openModal(element.img)}
             >
               <Image
