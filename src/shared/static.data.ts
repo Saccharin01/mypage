@@ -34,12 +34,12 @@ export const staticData: IstaticData[] = [
         },
         {
           title: "LRU 캐싱 인스턴스",
-          params: "AWS Amplify 배포 환경은 람다 기반의 서비스이기 때문에 서버 생태가 초기화 되는 문제를 해결하고자 전역으로 LRU 인스턴스를 생성해 선언했습니다.",
+          params: "AWS Amplify 배포 환경은 람다 기반의 서비스이기 때문에 서버 생태가 초기화 되는 문제를 해결하고자 전역으로 LRU 인스턴스를 생성해 선언했습니다. 정작 의도한 바와 다르게 캐시 인스턴스는 서버상태의 초기화를 막을 수는 없었지만, 데이터베이스에 빈번한 요청을 하지 않아도 된다는 점에서는 나름 효용이 있다고 판단, 삭제 보류 중입니다.",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_LRU_globals.webp",
         },
         {
           title: "메일 전송",
-          params: "요청사항이 n개 이상 제출되었을 경우, 개발자의 gmail 계정에 메일이 전송될 수 있도록 내부 로직을 구성했습니다. 여기에 결과값 사진도 들어가야 함!!!!",
+          params: "요청사항이 n개 이상 제출되었을 경우, 개발자의 gmail 계정에 메일이 전송될 수 있도록 내부 로직을 구성했습니다.",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_SMTP.webp",
         },
         {
