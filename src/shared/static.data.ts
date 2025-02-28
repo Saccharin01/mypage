@@ -40,6 +40,12 @@ export const staticData: IstaticData[] = [
         //   img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_LRU_globals.webp",
         // },
         {
+          title: "페이지네이션",
+          params:
+            "서버에 다량의 데이터를 요청하는 페이지이기 때문에 페이지네이션을 고려했습니다. \n최초 요청 시에는 15개의 데이터만 요청하고, 스크롤 이벤트를 감지해서 쓰레스홀드 이하로 내려갔을 때 추가적으로 데이터를 불러오게 조치했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_Pagination.webp",
+        },
+        {
           title: "메일 전송",
           params:
             "요청사항이 n개 이상 제출되었을 경우, 개발자의 gmail 계정에 메일이 전송될 수 있도록 내부 로직을 구성했습니다.",
