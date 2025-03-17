@@ -2,27 +2,27 @@ import { IStackList } from "./interface/static.interface"
 
 export const StackUsage : IStackList[] = [
   {
-    title : "Language",
-    params : ["JavaScript", "Python"]
+    title : "언어",
+    params : ["JavaScript", "TypeScript","Python"]
   },
   {
-    title : "FrontEnd FrameWork",
+    title : "프론트앤드 프레임워크",
     params : ["React", "Next.js", "Tailwind CSS"]
   },
   {
-    title : "BackEnd FrameWork",
-    params : ["Nest.js","FastAPI", "Mongoose"]
+    title : "서버, 백엔드 프레임워크",
+    params : ["Nest.js","FastAPI"]
   },
   {
-    title : "DataBase",
-    params : ["SQLite3","MongoDB"]
+    title : "데이터베이스 및 라이브러리",
+    params : ["SQLite3","MongoDB", "Mongoose"]
   },
   {
-    title : "Deploy",
-    params : ["AWS"]
+    title : "배포 및 컨테이너",
+    params : ["Docker","Linux","AWS Amplify", "AWS EC2"]
   },
   {
-    title : "ETC",
+    title : "머신러닝, 크롤링",
     params : ["Tensorflow", "Pytorch", "BS4"]
   },
 ]
