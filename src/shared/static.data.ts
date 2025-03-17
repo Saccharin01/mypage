@@ -4,14 +4,14 @@ export const staticData: IstaticData[] = [
   {
     title: "LoA Music",
     description:
-      "팀 프로젝트를 진행하며 학습한 내용을 이용해서 스스로의 도메인으로 배포까지 해보는 개인 프로젝트",
-    stack: ["next", "mongoDB Atlas", "AWS S3", "AWS Amplify"],
+      "가장 좋아하는 게임을 이용한 웹 어플리케이션 제작",
+    stack: ["Next.js", "mongoDB Atlas", "AWS S3", "AWS Amplify"],
     img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/loaMusic_index.webp",
     details: {
       introduce:
-        "팀 프로젝트에서 많이 부족했다고 생각되는 부분들을 모아 제가 좋아하는 도메인을 활용해 페이지를 제작하는 프로젝트입니다.",
+        "좋아하는 게임을 소개하고자 제작한 페이지입니다.",
       params:
-        "최초 구상은 Next를 이용해 간단한 페이지를 만드는 것이였으나, 개발 과정에서 추가되는 기능들과 배포 환경에서의 문제점 때문에 확장되는 기능을 관리하기 위해\n 각 기능을 모듈별로 세분화 하고 검증했습니다. \n\n •반응형 디자인과 이벤트 분기를 이용해 사용자의 경험에 부정적 영향을 줄이고자 노력했습니다.\n• 요청사항이 n개 이상 쌓였을 때 메일 알림이 오는 기능\n • 데이터베이스에 기록되어있는 일자를 기준으로 중복 메일이 전송되지 않게 검증하는 기능\n •  각 이미지 요소를 메모제이션 하는 기능 들이 들어가 있습니다.",
+        "팀 프로젝트를 거치며 스스로가 많이 부족하다고 느꼈던 경험이 있습니다. 그 경험을 바탕으로 내가 좋아하는 게임을 소개하는 나만의 웹 페이지, 웹 어플리케이션을 만들어보자 생각해 시작한 프로젝트입니다. 막상 개발 후에 배포를 해놓으니 반응형 디자인을 고려하지 않아 모바일 환경에서의 접근이 어려웠고, 반응형 디자인을 어설프게나마 추가했을 때에는 모바일 환경에서 다루기 어려운 드래그 앤 드랍 이벤트를 처리하는 방안을 생각해야 했었던 기억이 납니다.",
       about: [
         {
           placeholder: "notion",
@@ -48,8 +48,14 @@ export const staticData: IstaticData[] = [
         {
           title: "메일 전송",
           params:
-            "요청사항이 n개 이상 제출되었을 경우, 개발자의 gmail 계정에 메일이 전송될 수 있도록 내부 로직을 구성했습니다.",
+            "요청사항이 n개 이상 제출되었을 경우, 개발자의 계정에 메일이 전송될 수 있도록 내부 로직을 구성했습니다.",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_SMTP.webp",
+        },
+        {
+          title: "이벤트 분기 처리",
+          params:
+            "반응형 디자인이 사용자의 뷰포트를 기반으로 CSS를 조정하는 것에서 착안해 쓰레스홀드를 잡고, 뷰포트가 해당 값 이하라면 모바일 환경이라 생각해 드래그 앤 드랍 이벤트가 아닌 클릭 이벤트로 처리했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/event_condition.jpg",
         },
         {
           title: "중복 메일 방지",
