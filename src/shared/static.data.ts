@@ -3,13 +3,11 @@ import { IstaticData } from "./interface/static.interface";
 export const staticData: IstaticData[] = [
   {
     title: "LoA Music",
-    description:
-      "가장 좋아하는 게임을 이용한 웹 어플리케이션 제작",
+    description: "가장 좋아하는 게임을 이용한 웹 어플리케이션 제작",
     stack: ["Next.js", "mongoDB Atlas", "AWS S3", "AWS Amplify"],
     img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/loaMusic_index.webp",
     details: {
-      introduce:
-        "좋아하는 게임을 소개하고자 제작한 페이지입니다.",
+      introduce: "좋아하는 게임을 소개하고자 제작한 페이지입니다.",
       params:
         "팀 프로젝트를 거치며 스스로가 많이 부족하다고 느꼈던 경험이 있습니다. 그 경험을 바탕으로 내가 좋아하는 게임을 소개하는 나만의 웹 페이지, 웹 어플리케이션을 만들어보자 생각해 시작한 프로젝트입니다. 막상 개발 후에 배포를 해놓으니 반응형 디자인을 고려하지 않아 모바일 환경에서의 접근이 어려웠고, 반응형 디자인을 어설프게나마 추가했을 때에는 모바일 환경에서 다루기 어려운 드래그 앤 드랍 이벤트를 처리하는 방안을 생각해야 했었던 기억이 납니다.",
       about: [
@@ -67,52 +65,10 @@ export const staticData: IstaticData[] = [
     },
   },
   {
-    title: "Good Start",
-    description:
-      "HTML, CSS, JS를 핸들링 해보며 이벤트를 익히기 위해 작성한 html, js",
-    stack: ["HTML", "CSS", "JavaScript"],
-    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/goodStart_SampleIMG.webp",
-    details: {
-      introduce:
-        "웹 개발을 처음 배워보면서 가장 기억에 남는 사이드 프로젝트입니다.",
-      params:
-        "웹 페이지 라고 부르기에 모자람이 많은 작업물입니다만, 이 페이지를 통해 모듈화 구조, 외부에서 데이터를 불러올 수 있다는 개념, 이벤트의 버블링과 캡쳐링 등 많은 것을 깨우치게 된 프로젝트입니다. \n 아래의 버튼을 이용하시면 학습했던 내용의 기록물이나 Github pages 기능을 이용해서 배포중인 환경을 살펴 보실 수 있습니다.",
-      about: [
-        {
-          placeholder: "notion",
-          link: "https://delicious-corn-899.notion.site/12db1f89bb83805c8895d0ce4652be7a",
-        },
-        {
-          placeholder: "Github",
-          link: "https://github.com/Saccharin01/Good-Start",
-        },
-        {
-          placeholder: "Github Pages",
-          link: "https://saccharin01.github.io/Good-Start/",
-        },
-      ],
-      sampleImg: [
-        {
-          title: "최초 시작",
-          params:
-            "바닐라 자바스크립트, HTML, CSS를 사용해서 제작한 첫 사이드 프로젝트.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
-        },
-        {
-          title: "조건 변수 사용",
-          params:
-            "조건문을 구성하는 과정에서 조건 변수를 사용해 이벤트를 처리합니다. 이벤트 대상이 아닌 요소를 클릭하면 조건 변수를 초기화 해서 모든 이벤트를 초기화합니다.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
-        },
-      ],
-    },
-  },
-
-  {
     title: "Taison Tiger",
     description:
       "머신러닝 기술을 이용해서 모델을 학습시키고, 학습된 모델에서 나온 예측 값을 활용해 웹 페이지를 구성하는 팀 프로젝트",
-    stack: ["Next.js", "FastAPI", "Pytorch", "Tensorflow", "Docker"],
+    stack: ["Next.js", "FastAPI", "Pytorch", "Tensorflow"],
     img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_index.webp",
     details: {
       introduce: "언어를 파이썬으로 변경해서 진행한 머신러닝 프로젝트입니다.",
@@ -139,12 +95,7 @@ export const staticData: IstaticData[] = [
             "클라이언트에서 원하는 사진을 선택하고, 해당 사진 제출할 수 있는 페이지",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_web_page.webp",
         },
-        {
-          title: "Docker 컨테이너 배포",
-          params:
-            "서버를 배포하기 위해 하나하나 필요한 모듈과 언어를 설치하지 않고 Docker를 이용해 컨테이너화 하여 배포",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_deploy.webp",
-        },
+
         {
           title: "모델 학습치 점검",
           params:
@@ -160,6 +111,96 @@ export const staticData: IstaticData[] = [
       ],
     },
   },
+  {
+    title: "Taison Tiger Crawler",
+    description:
+      "머신러닝 프로젝트에 이용할 데이터셋을 만들기 위한 크롤러 작성",
+    stack: ["Python", "bs4"],
+    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon_index.webp",
+    details: {
+      introduce: '"크롤러를 이용해볼 수 있지 않을까"',
+      params:
+        "사전에 제작되어있는 데이터셋을 활용하는 편이 훨씬 올바른 접근이였을 수 있지만, 이왕 하는 거 '어렵게' 해보자는 마음에 기초 데이터셋부터 만들기 위해 웹 크롤러를 이용해 데이터셋을 생성했습니다.",
+      about: [
+        {
+          placeholder: "notion",
+          link: "https://kongukjae.notion.site/962c28d2a75f4d3e9da7379fba87a637?pvs=74",
+        },
+      ],
+      sampleImg: [
+        {
+          title: "DOM 구조 파악",
+          params:
+            "UFC 선수들의 바디프로필을 소개하는 공식 페이지를 통해 이미지와 원하는 데이터를 추출하고자 DOM 구조와 페이지네이션 패턴을 파악했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
+        },
+        {
+          title: "robots.txt",
+          params:
+            "크롤링이라는 작업은 어찌보면 회색지대에 접해있는 작업이라고 생각합니다. 이럴 때에는 제작자가 허용한 부분과 허용하지 않은 부분을 파악하고 존중하는것이 올바른 행동이라고 생각합니다. 해당 규칙이 적혀있는 robots.txt 의 내용을 기반으로 웹 크롤링을 작업합니다",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        },
+        {
+          title: "지도학습을 위한 데이터 라벨링",
+          params:
+            "마련된 데이터를 기반으로 모델을 학습시키기 위한 데이터를 직접 라벨링해봤습니다. 최초 계획 단계에서는 이미지 인식 모델만 있어도 충분했지만, 시뮬레이션까지 돌려보자는 의견에 따라 강화 학습 모델이 필요했고 그 모델을 사용하기 위해 여러번 튜닝하고 최적의 모델을 생성하고자 노력했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+        },
+      ],
+    },
+  },
+  {
+    title: "Re : Taison Tiger",
+    description: "팀 프로젝트 개선 그리고 배포 시도",
+    stack: ["Next.js", "FastAPI", "Docker", "Ngnix", "Amplify", "EC2"],
+    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_index.webp",
+    details: {
+      introduce: "",
+      params:
+        "교육기간 중 제작한 머신러닝 프로젝트는 과정 말기에 시작되어 시간도 촉박하고 참여율도 저조했습니다. 해당 프로젝트의 팀장으로써, 비록 부족한 모습일지라도 이 프로젝트를 배포해보자, 고쳐보자 라는 오기가 발동해 개선과 배포를 이어가고 있습니다.",
+      about: [
+        {
+          placeholder: "notion",
+          link: "https://delicious-corn-899.notion.site/Notion-Page-123b1f89bb838053b8eae833aebc7e68#162b1f89bb8380d3b811c54faed79ae7",
+        },
+        {
+          placeholder: "Github",
+          link: "https://github.com/KDT-IaaS-Class-Two-Group/KDT-IaaS-2-ProjectB-2team/tree/Saccharin01/issue10",
+        },
+        {
+          placeholder: "Deploy",
+          link: "https://ml.saccharin01.com/",
+        },
+      ],
+      sampleImg: [
+        {
+          title: "모델 마이그레이션",
+          params:
+            "배포 환경에서 TensorFlow나 Pytorch는 너무 무겁다고 생각했습니다. 모델을 학습시키기 위한 도구가 필요한 게 아니라, 모델을 구동하기 위한 프로세스만 필요했다고 생각했기 때문에 무거운 프레임워크를 덜어내고 ONNX 를 이용해 모델을 구동시키기로 결정 했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_deploy.webp",
+        },
+        {
+          title: "Docker 컨테이너 배포",
+          params:
+            "Nest.js 로 작성한 서버를 배포하려고 할 때, node 환경을 구축하고 모듈을 설치하고 코드를 구동시키는 과정이 굉장히 불편했습니다. 이 과정을 Docker를 이용해 컨테이너로 만들면 훨씬 간편할 것 같아 해당 방법을 적용했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_deploy.webp",
+        },
+        {
+          title: "리버스 프록시 Ngnix 사용",
+          params:
+            "어찌저찌 컨테이너를 배포한다고 해도, 내부 포트를 직접적으로 노출하는 것은 보안상의 큰 문제라고 생각했습니다. 이에, 서버의 앞단에 서버의 요청을 대신 전달받고 판단해주는 Ngnix를 설치해 보안을 강화하고자 했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_serkleran.webp",
+        },
+        {
+          title: "자동화 스크립트의 공격 방어",
+          params:
+            "무사히 서버를 배포했으나, 자동화 도구가 악의적인 접근과 프로젝트의 민감한 파일을 탐색하려는 공격 시도를 포착했습니다. 이들을 방어하기 위해 GeoIP 를 사용, 한국이 아닌 지역에서의 접근을 차단하고 Ngnix 에서 특정 파일의 요청이나 상위 디렉토리로 이동하려는 시도를 하는 IP를 추적, 해당 IP가 잦은 접속 요청을 할 경우 블랙리스트를 생성해 접속을 차단하도록 조치하였습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_request_log1.webp",
+        },
+      ],
+    },
+  },
+
   {
     title: "CyberFunc ERP",
     description: "Next, Nest를 활용한 ERP 프로젝트",
@@ -202,33 +243,42 @@ export const staticData: IstaticData[] = [
     },
   },
   {
-    title: "hackathon Challenge",
+    title: "Good Start",
     description:
-      "KDT 해커톤 참여를 위해 자료 조사 및 서류 작업 준비, 그리고 참여 신청까지 했지만 아쉽게도 본선에 진입하지 못한 프로젝트",
-    stack: ["notion"],
-    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon_index.webp",
+      "HTML, CSS, JS를 핸들링 해보며 이벤트를 익히기 위해 작성한 html, js",
+    stack: ["HTML", "CSS", "JavaScript"],
+    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/goodStart_SampleIMG.webp",
     details: {
       introduce:
-        "학원 수강 기간 중 해커톤이 개최된다는 소식을 듣고 직접 참여 해보기 위해 팀을 구성하고, 여러 방면으로 자료 조사 및 참여를 위해 준비한 기획입니다.",
+        "웹 개발을 처음 배워보면서 가장 기억에 남는 사이드 프로젝트입니다.",
       params:
-        "안타깝게도 해당 해커톤은 본선 진출이 무산되었지만 평소 잘 모르던 도메인에 대한 자료 조사와 팀간 의견 조율을 진행했던 과정입니다.",
+        "웹 페이지 라고 부르기에 모자람이 많은 작업물입니다만, 이 페이지를 통해 모듈화 구조, 외부에서 데이터를 불러올 수 있다는 개념, 이벤트의 버블링과 캡쳐링 등 많은 것을 깨우치게 된 프로젝트입니다. \n 아래의 버튼을 이용하시면 학습했던 내용의 기록물이나 Github pages 기능을 이용해서 배포중인 환경을 살펴 보실 수 있습니다.",
       about: [
         {
           placeholder: "notion",
-          link: "https://kongukjae.notion.site/962c28d2a75f4d3e9da7379fba87a637?pvs=74",
+          link: "https://delicious-corn-899.notion.site/12db1f89bb83805c8895d0ce4652be7a",
+        },
+        {
+          placeholder: "Github",
+          link: "https://github.com/Saccharin01/Good-Start",
+        },
+        {
+          placeholder: "Github Pages",
+          link: "https://saccharin01.github.io/Good-Start/",
         },
       ],
       sampleImg: [
         {
-          title: "기획서 작성",
+          title: "최초 시작",
           params:
-            "팀원들과 회의하고, 기초 자료를 수집해 참가를 위한 기획서를 작성 했었습니다. ",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
+            "바닐라 자바스크립트, HTML, CSS를 사용해서 제작한 첫 사이드 프로젝트.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
         },
         {
-          title: "기획서 작성 2",
-          params: "",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+          title: "조건 변수 사용",
+          params:
+            "조건문을 구성하는 과정에서 조건 변수를 사용해 이벤트를 처리합니다. 이벤트 대상이 아닌 요소를 클릭하면 조건 변수를 초기화 해서 모든 이벤트를 초기화합니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
         },
       ],
     },
