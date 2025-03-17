@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useLiteral } from "./hooks/context/useLiteral";
 import { staticData } from "@/shared/static.data";
+import { IstaticData } from "@/shared/interface/static.interface";
 import Image from "next/image";
 import Link from "next/link";
 import StackTags from "./StackTags";
@@ -12,6 +13,10 @@ export default function ProjectElement() {
   const { setLiteral } = useLiteral();
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  const handleSelectData = (item: IstaticData) => {
+    setLiteral(item);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,6 +53,7 @@ export default function ProjectElement() {
                 className={`flex flex-col md:flex-row ${
                   index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
                 } items-center rounded-lg shadow-md hover:shadow-lg transition-shadow h-[350px] shadow-gray-700 hover:shadow-gray-700`}
+                onClick={()=>{handleSelectData(element)}}
               >
                 {/* 이미지 영역 */}
                 <div className="md:w-1/2 w-full h-1/2 md:h-full relative flex justify-center items-center overflow-hidden rounded">
