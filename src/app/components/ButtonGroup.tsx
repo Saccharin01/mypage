@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
-import { ILinkbuttons } from "@/shared/interface/static.interface"
+import { useRouter } from "next/navigation";
+import { ILinkbuttons } from "@/shared/interface/static.interface";
 
 export default function ButtonGroup({ aboutProps }: { aboutProps: ILinkbuttons[] }) {
+  const router = useRouter();
+
   return (
     <div className="flex flex-wrap gap-4 my-6">
       {aboutProps.map((button, index) => (
@@ -15,12 +20,15 @@ export default function ButtonGroup({ aboutProps }: { aboutProps: ILinkbuttons[]
           {button.placeholder}
         </Link>
       ))}
-              <Link
-          href="/"
-          className="ml-auto bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
-        >
-          뒤로가기
-        </Link>
+
+      <button
+        onClick={() => {
+          router.back();
+        }}
+        className="ml-auto bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
+      >
+        뒤로가기
+      </button>
     </div>
   );
 }
