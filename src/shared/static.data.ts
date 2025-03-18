@@ -26,7 +26,7 @@ export const staticData: IstaticData[] = [
       ],
       sampleImg: [
         {
-          title: "성능 고려",
+          title: "메모제이션",
           params:
             "현 상황에서는 데이터의 크기가 작아 문제가 없지만, 데이터가 커지는 상황을 고려해 useMemo 훅을 이용해 \n불필요한 리랜더링 비용을 감소합니다.",
           img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/LoA_Music/LoA_Music_useMemo.webp",
@@ -116,15 +116,15 @@ export const staticData: IstaticData[] = [
     description:
       "머신러닝 프로젝트에 이용할 데이터셋을 만들기 위한 크롤러 작성",
     stack: ["Python", "bs4"],
-    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon_index.webp",
+    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/DataCrawler/ufc_fighter_profile.jpg",
     details: {
       introduce: '"크롤러를 이용해볼 수 있지 않을까"',
       params:
         "사전에 제작되어있는 데이터셋을 활용하는 편이 훨씬 올바른 접근이였을 수 있지만, 이왕 하는 거 '어렵게' 해보자는 마음에 기초 데이터셋부터 만들기 위해 웹 크롤러를 이용해 데이터셋을 생성했습니다.",
       about: [
         {
-          placeholder: "notion",
-          link: "https://kongukjae.notion.site/962c28d2a75f4d3e9da7379fba87a637?pvs=74",
+          placeholder: "GitHub",
+          link: "https://github.com/Saccharin01/tensorFlow",
         },
       ],
       sampleImg: [
@@ -132,13 +132,13 @@ export const staticData: IstaticData[] = [
           title: "DOM 구조 파악",
           params:
             "UFC 선수들의 바디프로필을 소개하는 공식 페이지를 통해 이미지와 원하는 데이터를 추출하고자 DOM 구조와 페이지네이션 패턴을 파악했습니다.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon1.webp",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/DataCrawler/robots.jpg",
         },
         {
           title: "robots.txt",
           params:
             "크롤링이라는 작업은 어찌보면 회색지대에 접해있는 작업이라고 생각합니다. 이럴 때에는 제작자가 허용한 부분과 허용하지 않은 부분을 파악하고 존중하는것이 올바른 행동이라고 생각합니다. 해당 규칙이 적혀있는 robots.txt 의 내용을 기반으로 웹 크롤링을 작업합니다",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/hackathon/hackathon2.webp",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/DataCrawler/robots.jpg",
         },
         {
           title: "지도학습을 위한 데이터 라벨링",
@@ -177,7 +177,7 @@ export const staticData: IstaticData[] = [
           title: "모델 마이그레이션",
           params:
             "배포 환경에서 TensorFlow나 Pytorch는 너무 무겁다고 생각했습니다. 모델을 학습시키기 위한 도구가 필요한 게 아니라, 모델을 구동하기 위한 프로세스만 필요했다고 생각했기 때문에 무거운 프레임워크를 덜어내고 ONNX 를 이용해 모델을 구동시키기로 결정 했습니다.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_deploy.webp",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_convert.jpg",
         },
         {
           title: "Docker 컨테이너 배포",
@@ -189,13 +189,13 @@ export const staticData: IstaticData[] = [
           title: "리버스 프록시 Ngnix 사용",
           params:
             "어찌저찌 컨테이너를 배포한다고 해도, 내부 포트를 직접적으로 노출하는 것은 보안상의 큰 문제라고 생각했습니다. 이에, 서버의 앞단에 서버의 요청을 대신 전달받고 판단해주는 Ngnix를 설치해 보안을 강화하고자 했습니다.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_serkleran.webp",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_ngnix.jpg",
         },
         {
           title: "자동화 스크립트의 공격 방어",
           params:
             "무사히 서버를 배포했으나, 자동화 도구가 악의적인 접근과 프로젝트의 민감한 파일을 탐색하려는 공격 시도를 포착했습니다. 이들을 방어하기 위해 GeoIP 를 사용, 한국이 아닌 지역에서의 접근을 차단하고 Ngnix 에서 특정 파일의 요청이나 상위 디렉토리로 이동하려는 시도를 하는 IP를 추적, 해당 IP가 잦은 접속 요청을 할 경우 블랙리스트를 생성해 접속을 차단하도록 조치하였습니다.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/taison_request_log1.webp",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/taison/attack_log.webp",
         },
       ],
     },
