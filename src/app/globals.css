@@ -6,3 +6,23 @@
   margin: 0;
   padding: 0;
 }
+html,
+#__next {
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top left, #6846ffde, #b2a6ff, #d3c8ff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body {
+  height: 100%;
+  background: transparent;
+}
+
+/* html,
+body,
+#__next {
+  height: 100%;
+} */
