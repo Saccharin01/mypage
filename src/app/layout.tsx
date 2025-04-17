@@ -21,7 +21,7 @@ export default function RootLayout({
       <StaticProvider>
         <body className="h-full">
           <div className="min-h-screen w-full flex flex-col">
-            <div className="flex-1 bg-gradient-to-tl from-[#6846ffde] via-[#b2a6ff] to-[#d3c8ff] px-2 lg:px-80 w-full">
+            <div className="flex-1 px-2 lg:px-80 w-full">
               {children}
             </div>
           </div>
