@@ -39,7 +39,7 @@ export default function MainPage() {
         <StackElement />
       </main>
 
-      <footer className="mt-10 pb-5 w-full">
+      <footer className="my-10 w-full">
         <ProjectElement />
       </footer>
     </div>
