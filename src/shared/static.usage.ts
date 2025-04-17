@@ -3,19 +3,19 @@ import { IStackList } from "./interface/static.interface"
 export const StackUsage : IStackList[] = [
   {
     title : "언어",
-    params : ["JavaScript", "TypeScript","Python"]
+    params : ["JavaScript","TypeScript","Python","Java"]
   },
   {
-    title : "프론트앤드 프레임워크",
+    title : "프론트엔드 프레임워크",
     params : ["React", "Next.js", "Tailwind CSS"]
   },
   {
     title : "서버, 백엔드 프레임워크",
-    params : ["Nest.js","FastAPI"]
+    params : ["Nest.js","FastAPI", "Spring boot"]
   },
   {
-    title : "데이터베이스 및 라이브러리",
-    params : ["SQLite3","MongoDB", "Mongoose"]
+    title : "데이터베이스, ORM 프레임워크",
+    params : ["mariaDB","MongoDB","Query DSL","Mongoose"]
   },
   {
     title : "배포 및 컨테이너",
