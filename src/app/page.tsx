@@ -8,7 +8,7 @@ export default function MainPage() {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
       {/* 랜딩 메시지 */}
-      <header className="flex flex-col justify-center items-center h-[70vh]">
+      <header className="flex flex-col justify-center items-center h-[70vh] bg-transparent">
         <motion.h1
           className="text-5xl font-bold mb-3"
           initial={{ opacity: 0, y: 20 }}
