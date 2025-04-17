@@ -283,4 +283,45 @@ export const staticData: IstaticData[] = [
       ],
     },
   },
+  {
+    title: "Good Start",
+    description:
+      "HTML, CSS, JS를 핸들링 해보며 이벤트를 익히기 위해 작성한 html, js",
+    stack: ["HTML", "CSS", "JavaScript"],
+    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/goodStart_SampleIMG.webp",
+    details: {
+      introduce:
+        "웹 개발을 처음 배워보면서 가장 기억에 남는 사이드 프로젝트입니다.",
+      params:
+        "웹 페이지 라고 부르기에 모자람이 많은 작업물입니다만, 이 페이지를 통해 모듈화 구조, 외부에서 데이터를 불러올 수 있다는 개념, 이벤트의 버블링과 캡쳐링 등 많은 것을 깨우치게 된 프로젝트입니다. \n 아래의 버튼을 이용하시면 학습했던 내용의 기록물이나 Github pages 기능을 이용해서 배포중인 환경을 살펴 보실 수 있습니다.",
+      about: [
+        {
+          placeholder: "notion",
+          link: "https://delicious-corn-899.notion.site/12db1f89bb83805c8895d0ce4652be7a",
+        },
+        {
+          placeholder: "Github",
+          link: "https://github.com/Saccharin01/Good-Start",
+        },
+        {
+          placeholder: "Github Pages",
+          link: "https://saccharin01.github.io/Good-Start/",
+        },
+      ],
+      sampleImg: [
+        {
+          title: "최초 시작",
+          params:
+            "바닐라 자바스크립트, HTML, CSS를 사용해서 제작한 첫 사이드 프로젝트.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
+        },
+        {
+          title: "조건 변수 사용",
+          params:
+            "조건문을 구성하는 과정에서 조건 변수를 사용해 이벤트를 처리합니다. 이벤트 대상이 아닌 요소를 클릭하면 조건 변수를 초기화 해서 모든 이벤트를 초기화합니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
+        },
+      ],
+    },
+  },
 ];
