@@ -64,6 +64,45 @@ export const staticData: IstaticData[] = [
       ],
     },
   },
+    {
+    title: "Spring Boot ApexChart",
+    description:
+      "java를 학습하며 백엔드, 프론트 엔드 어플리케이션을 구성하는 프로젝트",
+    stack: ["Java", "Spring Boot", "MariaDB", "Next.js", "ApexChart"],
+    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/ApexChart/ApexChart.png",
+    details: {
+      introduce:
+        "IoT 제품을 사용하여 java 학습과 관계형 데이터베이스를 다뤄보는 프로젝트.",
+      params:
+        "JavaScript를 기반으로 웹 개발을 시작하며, Node.js 진영의 다양한 프레임워크(Nest.js 등)를 학습하였습니다.\n이후 더 넓은 확장성과 안정성을 가진 언어에 대한 필요성을 느껴, 많은 기업들이 사용하는 Java를 학습하게 되었고,\nNest.js의 설계적 기반이 된 Spring Boot를 통해 백엔드 어플리케이션을 직접 구현해보았습니다.\n\n특히 해당 프로젝트에서는 IoT 개념을 도입하여 실시간 센서 데이터를 수집하고, 이를 시각적으로 표현할 수 있도록 ApexChart를 활용한 대시보드 형태의 웹 서비스를 구성하였습니다.",
+      about: [
+        {
+          placeholder: "notion",
+          link: "https://delicious-corn-899.notion.site/Notion-Page-123b1f89bb838053b8eae833aebc7e68#1d8b1f89bb838076a88df6724fffbf69",
+        },
+      ],
+      sampleImg: [
+        {
+          title: "백엔드 어플리케이션 설계",
+          params:
+            "Java 언어를 학습하며 강한 타입과 명시적인 구조 설계가 돋보이는 언어라는 인상을 받았습니다. 기존에 사용하던 Nest.js보다 더 정형화된 방식으로 설계할 수 있었고, Spring Boot를 활용하여 컨트롤러, 서비스, 저장소 레이어를 분리하고, 구조화된 REST API 서버를 직접 설계하였습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/ApexChart/backend.png",
+        },
+        {
+          title: "ApexChart 도입",
+          params:
+            "데이터의 흐름과 변화를 직관적으로 이해할 수 있도록 시각화 도구의 도입이 필요하다고 판단했습니다. 다양한 차트 라이브러리를 검토한 결과, ApexChart의 유연성과 반응성이 적합하다고 판단하여 도입하였고, 데이터베이스에서 조회한 센서 값을 시간대별로 시각화하여 사용자 경험을 개선하였습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/ApexChart/chart_photo.png",
+        },
+        {
+          title: "검색 기능 구현",
+          params:
+            "최초에는 센서 유닛 ID를 클릭하면 최근 50개의 습도 데이터를 조회하는 기능만 제공되었지만, 사용자들이 특정 날짜나 기간별로 데이터를 탐색할 수 있도록 검색 기능이 필요하다고 판단했습니다. 이를 위해 연도, 기간 단위, 시작일과 종료일을 기준으로 데이터를 필터링할 수 있는 인터페이스를 제공하고, 서버에서는 조건에 따라 동적으로 쿼리를 수행해 결과를 반환하도록 구현했습니다.",
+          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/ApexChart/search_options.png",
+        },
+      ],
+    },
+  },
   {
     title: "Taison Tiger",
     description:
@@ -283,45 +322,5 @@ export const staticData: IstaticData[] = [
       ],
     },
   },
-  {
-    title: "Good Start",
-    description:
-      "HTML, CSS, JS를 핸들링 해보며 이벤트를 익히기 위해 작성한 html, js",
-    stack: ["HTML", "CSS", "JavaScript"],
-    img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/goodStart_SampleIMG.webp",
-    details: {
-      introduce:
-        "웹 개발을 처음 배워보면서 가장 기억에 남는 사이드 프로젝트입니다.",
-      params:
-        "웹 페이지 라고 부르기에 모자람이 많은 작업물입니다만, 이 페이지를 통해 모듈화 구조, 외부에서 데이터를 불러올 수 있다는 개념, 이벤트의 버블링과 캡쳐링 등 많은 것을 깨우치게 된 프로젝트입니다. \n 아래의 버튼을 이용하시면 학습했던 내용의 기록물이나 Github pages 기능을 이용해서 배포중인 환경을 살펴 보실 수 있습니다.",
-      about: [
-        {
-          placeholder: "notion",
-          link: "https://delicious-corn-899.notion.site/12db1f89bb83805c8895d0ce4652be7a",
-        },
-        {
-          placeholder: "Github",
-          link: "https://github.com/Saccharin01/Good-Start",
-        },
-        {
-          placeholder: "Github Pages",
-          link: "https://saccharin01.github.io/Good-Start/",
-        },
-      ],
-      sampleImg: [
-        {
-          title: "최초 시작",
-          params:
-            "바닐라 자바스크립트, HTML, CSS를 사용해서 제작한 첫 사이드 프로젝트.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start2.webp",
-        },
-        {
-          title: "조건 변수 사용",
-          params:
-            "조건문을 구성하는 과정에서 조건 변수를 사용해 이벤트를 처리합니다. 이벤트 대상이 아닌 요소를 클릭하면 조건 변수를 초기화 해서 모든 이벤트를 초기화합니다.",
-          img: "https://saccharinportfolio.s3.ap-northeast-2.amazonaws.com/GoodStart/good_start1.webp",
-        },
-      ],
-    },
-  },
+
 ];
